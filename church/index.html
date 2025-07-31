@@ -1,0 +1,157 @@
+<?php
+// Daily verses array
+$verses = [
+  '"For we walk by faith, not by sight." — 2 Corinthians 5:7',
+  '"The Lord is my shepherd; I shall not want." — Psalm 23:1',
+  '"I can do all things through Christ who strengthens me." — Philippians 4:13',
+  '"Trust in the Lord with all your heart." — Proverbs 3:5',
+  '"Be still, and know that I am God." — Psalm 46:10',
+  '"Jesus Christ is the same yesterday and today and forever." — Hebrews 13:8',
+  '"The joy of the Lord is your strength." — Nehemiah 8:10',
+  '"Your word is a lamp to my feet and a light to my path." — Psalm 119:105',
+  '"Come to me, all you who are weary and burdened, and I will give you rest." — Matthew 11:28',
+  '"Let all that you do be done in love." — 1 Corinthians 16:14'
+];
+
+// Pick a random verse
+$dailyVerse = $verses[array_rand($verses)];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Word of Faith Church Emusire</title>
+  <link rel="stylesheet" href="index.css" />
+  <!-- Font Awesome (for social media icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="index.php">
+          <img src="pic/word_of_faith_logo.png" alt="Church Logo" class="logo" />
+        </a>
+        <span class="logo-text">WORD OF FAITH CHURCH INTERNATIONAL</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.php"><i class="fas fa-info-circle"></i> About us</a></li>
+        <li><a href="services.php"><i class="fas fa-church"></i> Our Services</a></li>
+        <li><a href="contact.php"><i class="fas fa-phone"></i>  Help</a></li>
+        <li><a href="login.php" class="btn"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        <li><a href="register.php" class="btn"><i class="fas fa-user-plus"></i> Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+  <div class="welcome-text">
+    <h1 class="animated-text">
+      <span>Welcome</span>
+      <span>to</span>
+      <span>Word</span>
+      <span>of</span>
+      <span>Faith</span>
+      <span>Church</span>
+    </h1>
+    <p>We preach Christ crucified. 1<sup>st</sup> Corinthians 1:23</p>
+    <a href="about.php" class="btn">About us</a>
+  </div>
+</section>
+
+
+<section class="section about-services-row">
+  <!-- About Us -->
+  <div class="column-box">
+    <img src="pic/about.jpg" alt="About Us" class="section-image" />
+    <div class="section-text">
+      <h2><i class="fas fa-users"></i> About Us</h2>
+      <p>We are a community of believers dedicated to spreading faith, love, and the gospel of Christ.</p>
+      <a href="about.php"><i class="fas fa-info-circle"></i> Learn More</a>
+    </div>
+  </div>
+
+  <!-- Our Services -->
+  <div class="column-box">
+    <img src="pic/service.jpg" alt="Our Services" class="section-image" />
+    <div class="section-text">
+      <h2><i class="fas fa-hand-holding-heart"></i> Our Services</h2>
+      <ul>
+        <li><i class="fas fa-cross"></i> Sunday Service</li>
+        <li><i class="fas fa-praying-hands"></i> Prayer Meetings</li>
+        <li><i class="fas fa-people-carry"></i> Community Outreach</li>
+        <li><i class="fas fa-users"></i> Fellowships</li>
+      </ul>
+      <a href="services.php"><i class="fas fa-church"></i> View All Services</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Daily Verse Section -->
+<section class="section daily-verse">
+  <div class="section-text">
+    <h2>Daily Verse</h2>
+    <p><em><?php echo $dailyVerse; ?></em></p>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="section gallery">
+  <div class="section-text">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="pic/pic1.jpg" alt="Event 1" />
+      <img src="pic/pic2.jpg" alt="Event 2" />
+      <img src="pic/pic3.jpg" alt="Event 3" />
+      <img src="pic/pic4.jpg" alt="Event 4" />
+      <img src="pic/pic5.jpg" alt="Event 5" />
+      <img src="pic/pic6.jpg" alt="Event 6" />
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="section video">
+  <div class="section-text">
+    <h2>Videos</h2>
+    <div class="gallery-grid">
+      <video controls width="100%">
+        <source src="video/v1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls width="100%">
+        <source src="video/v2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video controls width="100%">
+        <source src="video/v3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-text">
+      <h2>Contact & Social Media</h2>
+      <p><strong>Location:</strong> Emusire, Kenya</p>
+      <p><a href="https://wa.me/254743728727" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      <p><a href="mailto:joshwaupendo@gmail.com"><i class="fas fa-envelope"></i> Email</a></p>
+      <p><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook: Word of Faith Church Emusire</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Jesus Restoration Centre | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+
