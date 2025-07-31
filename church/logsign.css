@@ -1,0 +1,147 @@
+/* login and registration.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Dark navy */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.portal {
+    background-color:  #f7f7f7;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #0d0e0f;
+}
+
+.login-card h2 i {
+    margin-right: 10px;
+    color: #0d0368;
+}
+
+.error-msg {
+    color: #e74c3c;
+    background-color: #fceae9;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color:#070707;
+    font-size: 18px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #2980b9;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+.btn {
+    background-color:  #010e0c;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1c5980;
+}
+
+.extra-links {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #040680;
+}
+
+.extra-links a {
+    color: #0906aa;
+    text-decoration: none;
+    font-weight: 600;
+    transition: text-decoration 0.3s ease;
+    margin: 0 5px;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #1106ac;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .portal {
+        padding: 20px;
+        margin: 0 10px;
+    }
+}
